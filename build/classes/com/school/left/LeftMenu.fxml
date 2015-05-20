@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="290.0" style="-fx-alignment: center; -fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.left.LeftMenuController">
+   <children>
+      <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" />
+      <StackPane>
+         <children>
+            <Button fx:id="btStudent" mnemonicParsing="false" onAction="#btStudentHandle" prefHeight="39.0" prefWidth="197.0" style="-fx-background-color: transparent;" text="Student" textFill="#f8f9fc" wrapText="true">
+               <font>
+                  <Font name="Georgia Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </StackPane>
+      <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" />
+      <Button fx:id="btMarkSheet" mnemonicParsing="false" onAction="#btMarkSheetHandle" prefHeight="39.0" prefWidth="146.0" style="-fx-background-color: transparent;" text="Marksheets" textFill="#f8f9fc">
+         <font>
+            <Font name="Georgia Bold" size="19.0" />
+         </font>
+      </Button>
+      <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" />
+      <Button fx:id="btFees" mnemonicParsing="false" onAction="#btFeesHandle" prefHeight="39.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="Fees" textFill="#f8f9fc">
+         <font>
+            <Font name="Georgia Bold" size="19.0" />
+         </font>
+      </Button>
+      <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" />
+      <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Button" textFill="#f8f9fc">
+         <font>
+            <Font name="Georgia Bold" size="19.0" />
+         </font>
+      </Button>
+      <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" />
+      <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Button" textFill="#f8f9fc">
+         <font>
+            <Font name="Georgia Bold" size="19.0" />
+         </font>
+      </Button>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+   </children>
+</VBox>

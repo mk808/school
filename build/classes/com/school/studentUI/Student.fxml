@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1145.0" style="-fx-border-width: 10; -fx-border-radius: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.studentUI.StudentController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" StackPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Add Student">
+               <content>
+                  <StackPane prefHeight="861.0" prefWidth="1224.0">
+                     <children>
+                        <VBox prefHeight="954.0" prefWidth="1207.0">
+                           <children>
+                              <Separator prefHeight="32.0" prefWidth="1109.0" />
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="1109.0">
+                                 <children>
+                                    <Separator prefHeight="0.0" prefWidth="83.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                    <StackPane>
+                                       <children>
+                                          <Label prefHeight="27.0" prefWidth="189.0" text="Addmission No." />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <TextField fx:id="admissionno" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator prefHeight="0.0" prefWidth="123.0" visible="false" />
+                                    <StackPane>
+                                       <children>
+                                          <Label prefHeight="27.0" prefWidth="206.0" text="Addmission Date" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <DatePicker fx:id="admissiondate" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator prefHeight="0.0" prefWidth="117.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <Label alignment="CENTER" opacity="0.5" prefHeight="30.0" prefWidth="332.0" text="PERSONAL DETAILS">
+                                 <font>
+                                    <Font name="Georgia" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefHeight="20.0" prefWidth="854.0" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="854.0">
+                                 <children>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                    <StackPane prefHeight="57.0" prefWidth="211.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Full Name" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <TextField fx:id="name" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane prefHeight="57.0" prefWidth="216.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Fathers Name" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <TextField fx:id="fname" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="854.0">
+                                 <children>
+                                    <Separator prefHeight="17.0" prefWidth="211.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                    <StackPane prefHeight="57.0" prefWidth="201.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Mothers Name" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="57.0" prefWidth="222.0">
+                                       <children>
+                                          <TextField fx:id="mname" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane prefHeight="57.0" prefWidth="214.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Date of Birth" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="57.0" prefWidth="248.0">
+                                       <children>
+                                          <DatePicker fx:id="dob" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator prefHeight="5.0" prefWidth="180.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="854.0">
+                                 <children>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                    <StackPane prefHeight="57.0" prefWidth="205.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Blood Group" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="57.0" prefWidth="219.0">
+                                       <children>
+                                          <TextField fx:id="bloodgrp" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="57.0" prefWidth="231.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Category" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="57.0" prefWidth="230.0">
+                                       <children>
+                                          <TextField fx:id="category" />
+                                       </children>
+                                    </StackPane>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="57.0" prefWidth="854.0">
+                                 <children>
+                                    <Separator prefHeight="17.0" prefWidth="211.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                    <StackPane prefHeight="57.0" prefWidth="155.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Gender" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="57.0" prefWidth="235.0">
+                                       <children>
+                                          <ComboBox fx:id="gender" prefHeight="39.0" prefWidth="200.0" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane prefHeight="57.0" prefWidth="214.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Class &amp; batch" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <ComboBox fx:id="batch" prefHeight="39.0" prefWidth="204.0" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator prefHeight="5.0" prefWidth="180.0" visible="false" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <Separator prefHeight="20.0" prefWidth="854.0" />
+                              <Label alignment="CENTER" opacity="0.5" prefHeight="30.0" prefWidth="285.0" text="CONTACT DETAILS">
+                                 <font>
+                                    <Font name="Georgia" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Separator prefHeight="20.0" prefWidth="854.0" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="1122.0">
+                                 <children>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                    <StackPane prefHeight="57.0" prefWidth="218.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Address" textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <TextArea fx:id="address" prefHeight="57.0" prefWidth="339.0" />
+                                       </children>
+                                    </StackPane>
+                                    <Label alignment="TOP_LEFT" contentDisplay="TOP" text="*" textFill="#f50505">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane prefHeight="57.0" prefWidth="218.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="PIN Code." textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <TextField fx:id="pincode" />
+                                       </children>
+                                    </StackPane>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="854.0">
+                                 <children>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                    <StackPane prefHeight="57.0" prefWidth="218.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Phone No." textAlignment="CENTER" />
+                                       </children>
+                                    </StackPane>
+                                    <StackPane>
+                                       <children>
+                                          <TextField fx:id="phoneno" />
+                                       </children>
+                                    </StackPane>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="854.0">
+                                 <children>
+                                    <Separator prefHeight="1.0" prefWidth="330.0" visible="false" HBox.hgrow="ALWAYS" />
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="146.0" text="Photo" textAlignment="CENTER" wrapText="true" />
+                                    <StackPane prefHeight="57.0" prefWidth="223.0">
+                                       <children>
+                                          <Button fx:id="btUpload" mnemonicParsing="false" onAction="#btUploadHandle" prefHeight="39.0" prefWidth="134.0" text="Upload" />
+                                       </children>
+                                    </StackPane>
+                                    <ImageView fitHeight="89.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <Separator prefHeight="20.0" prefWidth="854.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                    <StackPane prefHeight="100.0" prefWidth="221.0">
+                                       <children>
+                                          <Button fx:id="btSave" mnemonicParsing="false" onAction="#btSaveHandle" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #5188ff;" text="Save" textFill="#fafafb">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="100.0" prefWidth="256.0">
+                                       <children>
+                                          <Button fx:id="btClear" mnemonicParsing="false" onAction="#btClearHandle" style="-fx-background-color: #5188ff;" text="Reset/Clear" textFill="#f2efef">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </StackPane>
+                                    <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <Separator prefHeight="20.0" prefWidth="854.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </content>
+          </Tab>
+          <Tab text="Modify Student Detail">
+               <content>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                     </children>
+                  </StackPane>
+               </content>
+          </Tab>
+            <Tab text="Search">
+               <content>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</StackPane>

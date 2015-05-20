@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bodyContent" prefHeight="891.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.initUI.InitMainUIController">
+   <left>
+      <VBox opacity="0.66" style="-fx-alignment: center; -fx-background-color: black;">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" visible="false" VBox.vgrow="NEVER" />
+            <StackPane>
+               <children>
+                  <Button fx:id="btStudent" mnemonicParsing="false" onAction="#btStudentHandle" prefHeight="39.0" prefWidth="197.0" style="-fx-border-color: grey; -fx-background-color: black;" text="Student" textFill="#f8f9fc" wrapText="true">
+                     <font>
+                        <Font name="Georgia Bold" size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </StackPane>
+            <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" visible="false" />
+            <StackPane>
+               <children>
+                  <Button fx:id="btMarkSheet" mnemonicParsing="false" onAction="#btMarkSheetHandle" prefHeight="37.0" prefWidth="197.0" style="-fx-border-color: grey; -fx-background-color: black;" text="Marksheets" textFill="#f8f9fc">
+                     <font>
+                        <Font name="Georgia Bold" size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </StackPane>
+            <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" visible="false" />
+            <StackPane>
+               <children>
+                  <Button fx:id="btFees" mnemonicParsing="false" onAction="#btFeesHandle" prefHeight="37.0" prefWidth="197.0" style="-fx-border-color: grey; -fx-background-color: black;" text="Fees" textFill="#f8f9fc">
+                     <font>
+                        <Font name="Georgia Bold" size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </StackPane>
+            <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" visible="false" />
+            <StackPane>
+               <children>
+                  <Button fx:id="btSettings" mnemonicParsing="false" onAction="#btSettingsHandle" prefHeight="37.0" prefWidth="197.0" style="-fx-border-color: grey; -fx-background-color: black;" text="Settings" textFill="#f8f9fc">
+                     <font>
+                        <Font name="Georgia Bold" size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </StackPane>
+            <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="4.0" visible="false" />
+            <StackPane>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="197.0" style="-fx-border-color: grey; -fx-background-color: black;" text="Button" textFill="#f8f9fc">
+                     <font>
+                        <Font name="Georgia Bold" size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </StackPane>
+            <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <StackPane opacity="0.66" style="-fx-background-color: black; -fx-border-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" style="-fx-background-color: BLACK;">
+               <children>
+                  <StackPane prefHeight="82.0" prefWidth="195.0" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <ImageView fx:id="logo" fitHeight="82.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </StackPane>
+                  <StackPane HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="HIM SHIKHAR SCHOOL" textAlignment="CENTER" textFill="#fafdff">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </top>
+   <right>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="info" alignment="CENTER" text="Info will be displayed here" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <StackPane HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lblfooterinfo" text="Footer Area" />
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <StackPane fx:id="stackbody" style="-fx-border-color: red;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane opacity="0.66" prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: BLACK;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="113.0" text="HOME" textAlignment="CENTER" textFill="#dae106">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label text="HIM SHIKHAR SCHOOL" textAlignment="CENTER" textFill="#f8f6f6">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
