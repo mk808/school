@@ -4,7 +4,7 @@
 
 <hibernate-configuration>
    <session-factory>
-   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 
    <!-- Assume test is the database name -->
@@ -15,6 +15,8 @@
 <property name="hbm2ddl.auto">update</property>
 <!-- List of XML mapping files -->
    <mapping class="com.school.studentUI.StudentBean"/>
+   <mapping class="com.school.beans.SClass"/>
+   <mapping class="com.school.beans.Subjects"/>
    
 
 </session-factory>

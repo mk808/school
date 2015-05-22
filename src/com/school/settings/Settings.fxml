@@ -19,50 +19,92 @@
                         <Separator prefHeight="20.0" prefWidth="1106.0" />
                         <StackPane />
                         <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="1.0" />
-                        <TitledPane alignment="CENTER" animated="false" prefHeight="499.0" prefWidth="1106.0" text="List of Class">
+                        <TitledPane alignment="CENTER" animated="false" prefHeight="378.0" prefWidth="1106.0" text="List of Class">
                            <content>
-                              <HBox prefHeight="405.0" prefWidth="1104.0">
+                              <HBox prefHeight="350.0" prefWidth="1104.0">
                                  <children>
                                     <StackPane prefHeight="315.0" prefWidth="905.0" HBox.hgrow="ALWAYS">
                                        <children>
-                                          <ListView fx:id="listClass" prefHeight="200.0" prefWidth="200.0" />
+                                          <ListView fx:id="listClass" prefHeight="200.0" prefWidth="200.0" StackPane.alignment="CENTER" />
                                        </children>
                                     </StackPane>
-                                    <VBox prefHeight="431.0" prefWidth="167.0" HBox.hgrow="SOMETIMES">
-                                       <children>
-                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
-                                          <StackPane>
-                                             <children>
-                                                <TextField fx:id="txtClass" />
-                                             </children>
-                                          </StackPane>
-                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
-                                          <StackPane>
-                                             <children>
-                                                <Button fx:id="btAdd" mnemonicParsing="false" onAction="#btAddHandle" text="ADD" />
-                                             </children>
-                                          </StackPane>
-                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
-                                          <StackPane>
-                                             <children>
-                                                <Button fx:id="btDel" mnemonicParsing="false" onAction="#btDelHandle" text="DELETE" />
-                                             </children>
-                                          </StackPane>
-                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
-                                       </children>
-                                    </VBox>
                                  </children>
                               </HBox>
                            </content>
                         </TitledPane>
+                        <StackPane prefHeight="79.0" prefWidth="1106.0">
+                           <children>
+                              <TextField fx:id="txtClass" maxWidth="300.0" prefHeight="39.0" prefWidth="832.0" StackPane.alignment="CENTER" />
+                           </children>
+                        </StackPane>
+                        <HBox prefHeight="87.0" prefWidth="1106.0">
+                           <children>
+                              <StackPane />
+                              <Separator prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <StackPane>
+                                 <children>
+                                    <Button fx:id="btDel" mnemonicParsing="false" onAction="#btDelHandle" prefHeight="39.0" prefWidth="170.0" text="DELETE" />
+                                 </children>
+                              </StackPane>
+                              <Separator layoutX="10.0" layoutY="10.0" prefHeight="1.0" prefWidth="145.0" />
+                              <StackPane>
+                                 <children>
+                                    <Button fx:id="btAdd" mnemonicParsing="false" onAction="#btAddHandle" prefHeight="39.0" prefWidth="167.0" text="ADD" />
+                                 </children>
+                              </StackPane>
+                              <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
                      </children>
                   </VBox>
                </content>
           </Tab>
-          <Tab text="Edit Grades">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
+          <Tab text="Edit Subjects">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Separator prefHeight="20.0" prefWidth="1106.0" />
+                        <StackPane opacity="0.45" prefHeight="57.0" prefWidth="1106.0" />
+                        <Separator prefHeight="20.0" prefWidth="1106.0" />
+                        <HBox prefHeight="121.0" prefWidth="1106.0">
+                           <children>
+                              <StackPane>
+                                 <children>
+                                    <Label alignment="CENTER" opacity="0.62" prefHeight="27.0" prefWidth="237.0" text="Select Class">
+                                       <font>
+                                          <Font name="System Bold" size="28.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="39.0" prefWidth="430.0">
+                                 <children>
+                                    <ChoiceBox fx:id="comboClass" prefHeight="39.0" prefWidth="253.0" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <Separator prefHeight="20.0" prefWidth="1106.0" />
+                        <HBox prefHeight="328.0" prefWidth="1106.0">
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <ListView fx:id="listSubjects" editable="true" prefHeight="328.0" prefWidth="459.0" />
+                              <Separator prefHeight="7.0" prefWidth="87.0" />
+                              <StackPane>
+                                 <children>
+                                    <Button fx:id="btDeleteSubject" mnemonicParsing="false" onAction="#btDeleteSubjectHandle" prefHeight="39.0" prefWidth="119.0" text="Delete" />
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="328.0" prefWidth="128.0">
+                                 <children>
+                                    <Button fx:id="btSaveSubjects" mnemonicParsing="false" onAction="#btSaveSubjectsHandle" text="Save" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
           </Tab>
         </tabs>
       </TabPane>
