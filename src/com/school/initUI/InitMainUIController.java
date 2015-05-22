@@ -44,7 +44,7 @@ public class InitMainUIController implements Initializable {
     @FXML
     private BorderPane bodyContent;
             
-    private StackPane studentPanel,marksheetPanel,feesPanel;
+    private StackPane studentPanel,marksheetPanel,feesPanel,settings;
     @FXML
     private StackPane stackbody;
     
@@ -66,6 +66,7 @@ public class InitMainUIController implements Initializable {
             studentPanel=FXMLLoader.load(com.school.studentUI.StudentController.class.getResource("Student.fxml"));
             marksheetPanel=FXMLLoader.load(com.school.marksheetUI.MarkSheetController.class.getResource("MarkSheet.fxml"));
             feesPanel=FXMLLoader.load(com.school.feesUI.FeesController.class.getResource("Fees.fxml")); 
+            settings=FXMLLoader.load(com.school.settings.SettingsController.class.getResource("Settings.fxml"));
         } catch (IOException ex) {
             Logger.getLogger(InitMainUIController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -88,6 +89,7 @@ public class InitMainUIController implements Initializable {
 
     @FXML
     private void btSettingsHandle(ActionEvent event) {
+        bodyContent.setCenter(settings);
     }
     
 }

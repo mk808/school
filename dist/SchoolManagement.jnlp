@@ -11,7 +11,7 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="SchoolManagement.jar" size="100248" download="eager" />
+    <jar href="SchoolManagement.jar" size="101733" download="eager" />
     <jar href="lib/antlr-2.7.7.jar" size="445288" download="eager" />
     <jar href="lib/dom4j-1.6.1.jar" size="313898" download="eager" />
     <jar href="lib/hibernate-commons-annotations-4.0.5.Final.jar" size="75324" download="eager" />
